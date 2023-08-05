@@ -40,7 +40,7 @@ Mobile and Desktop screenshots:
 ### Links
 
 - Solution URL: [Github](https://github.com/viorel7774/Testimonials-grid-frontend-mentor-solution)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Github Live](https://viorel7774.github.io/Testimonials-grid-frontend-mentor-solution/)
 
 ## My process
 
