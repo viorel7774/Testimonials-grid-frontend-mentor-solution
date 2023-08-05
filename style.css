@@ -1,0 +1,129 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+:root{
+    /* primary colors */
+    --moderate-violet:hsl(263, 55%, 52%);
+    --dark-grayish-blue:hsl(217, 19%, 35%);
+    --dark-blackish-blue:hsl(219, 29%, 14%);
+    --white:hsl(0, 0%, 100%);
+
+    /* neutral colors */
+    --light-gray:hsl(0, 0%, 81%);
+    --light-grayish-blue:hsl(210, 46%, 95%);
+
+}
+
+body{
+    background-color: var(--light-grayish-blue);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+#testimonial-grid-container{
+    padding: 5% 3%;
+}
+#testimonial-1{
+    background-color: var(--moderate-violet);
+    color: var(--white);
+    background-image: url("images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-size: 25%;
+    background-position: 90% 1%;
+}
+#testimonial-2{
+    background-color: var(--dark-grayish-blue);
+    color: var(--white);
+}
+#testimonial-3, #testimonial-5{
+    background-color: var(--white);
+    color:var(--dark-grayish-blue);
+}
+#testimonial-4{
+    background-color: var(--dark-blackish-blue);
+    color: var(--white);
+}
+
+.grid-item{
+    margin-bottom: 15px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px 1px rgb(0,0,0,0.2);
+    font-size: 13px;
+    
+}
+.grid-item h4{
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.header-profile{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.header-profile img{
+    border-radius: 50%;
+    border:2px solid var(--light-gray);
+    margin-right: 10px;
+}
+.comment{
+    opacity: 70%;
+    font-weight: 500;
+}
+.name-profile .name{
+    font-size: 1rem;
+}
+.name-profile .verified{
+    opacity: 50%;
+}
+
+
+@media screen and (min-width:668px) {
+  body, 
+  #testimonial-grid-container,
+  #main-left,
+  #main-right,
+  #top,
+  #bottom 
+  {
+    display: flex;
+
+  }
+    body{
+        align-items: center;
+        justify-content: center;
+    }
+
+  #testimonial-grid-container{
+    max-width: 1110px;  
+  }
+
+  #main-left{
+    flex-basis: 75%;
+    flex-direction: column; 
+  }
+  
+  #main-right{
+    flex-basis: 25%;
+    
+  }
+  #top,
+  #bottom
+  {
+    flex-basis: 50%;
+  }
+
+  #main-left .grid-item{
+    margin-right:15px;
+  }
+
+#testimonial-1, #testimonial-4{
+    flex-basis: 65%;
+    
+}
+#testimonial-2, #testimonial-3{
+    flex-basis: 35%;
+}
+    
+}
